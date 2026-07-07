@@ -174,8 +174,13 @@ section{ padding:96px 28px; }
 .about-grid{
   max-width:1200px; margin:0 auto; display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:center;
 }
-.about-media{ position:relative; border-radius:var(--radius-lg); overflow:hidden; min-height:420px; }
-.about-media .blueprint{ width:100%; height:100%; display:block; }
+.about-media{ position:relative; border-radius:var(--radius-lg); overflow:hidden; min-height:420px; background:var(--navy); }
+.about-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.about-media.img-fallback img{ display:none; }
+.about-media.img-fallback::before{
+  content:"ShockImpact Aerial"; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  color:rgba(255,255,255,.3); font-family:var(--font-mono); font-size:.85rem; letter-spacing:.08em; text-align:center; padding:20px;
+}
 .about-media-badge{
   position:absolute; left:20px; bottom:20px; background:var(--navy); color:var(--white);
   padding:12px 18px; border-radius:var(--radius-sm); font-size:1.1rem; font-weight:600; line-height:1.1;
@@ -195,9 +200,14 @@ section{ padding:96px 28px; }
   transition:transform .2s ease, box-shadow .2s ease; outline:none;
 }
 .mat-card:hover, .mat-card:focus-visible{ transform:translateY(-6px); box-shadow:var(--e3); }
-.card-media{ aspect-ratio:4/3; overflow:hidden; background:var(--paper-2); }
-.card-media svg{ width:100%; height:100%; display:block; transition:transform .4s ease; }
-.mat-card:hover .card-media svg{ transform:scale(1.06); }
+.card-media{ aspect-ratio:4/3; overflow:hidden; background:var(--paper-2); position:relative; }
+.card-media img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }
+.mat-card:hover .card-media img{ transform:scale(1.06); }
+.card-media.img-fallback img{ display:none; }
+.card-media.img-fallback::before{
+  content:"Photo pending"; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  color:var(--steel-light); font-family:var(--font-mono); font-size:.75rem; letter-spacing:.06em;
+}
 .card-body{ padding:22px; }
 .card-body h3{ font-size:1.08rem; margin-bottom:10px; }
 .card-body p{ color:var(--steel); font-size:.9rem; }
@@ -205,8 +215,13 @@ section{ padding:96px 28px; }
 /* ---------- Work / gallery ---------- */
 .work{ background:var(--ink); }
 .work-grid{ max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-.work-item{ margin:0; border-radius:var(--radius-md); overflow:hidden; position:relative; }
-.work-item svg{ aspect-ratio:1/1; width:100%; height:auto; display:block; }
+.work-item{ margin:0; border-radius:var(--radius-md); overflow:hidden; position:relative; background:var(--navy-2); }
+.work-item img{ aspect-ratio:1/1; object-fit:cover; width:100%; display:block; }
+.work-item.img-fallback img{ display:none; }
+.work-item.img-fallback::before{
+  content:"Photo pending"; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  color:rgba(255,255,255,.35); font-family:var(--font-mono); font-size:.75rem; letter-spacing:.06em;
+}
 .work-item figcaption{
   position:absolute; left:0; right:0; bottom:0; padding:16px;
   background:linear-gradient(to top, rgba(0,0,0,.75), transparent);

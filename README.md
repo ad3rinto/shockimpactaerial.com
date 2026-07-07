@@ -26,7 +26,29 @@ Open `index.html` in any browser — no build step, no dependencies to install.
 - **Process section** — the six-step client workflow is shown as a numbered flight log, because it's an actual sequence, not decoration for decoration's sake.
 - Fully responsive down to mobile, keyboard-focus visible on all interactive elements, `prefers-reduced-motion` respected.
 
-## Stack
+## Adding photos
+
+The site loads real photography from an `assets/` folder in the project root. Create it and drop in files with these **exact names**:
+
+| Filename | Slot | Suggested search terms |
+|---|---|---|
+| `assets/about-drone-operator.jpg` | About section | "drone pilot remote controller field" |
+| `assets/service-mapping.jpg` | Mapping & surveying card | "aerial land survey topography" |
+| `assets/service-photogrammetry.jpg` | Photogrammetry card | "3D terrain model drone mapping" |
+| `assets/service-inspection.jpg` | Infrastructure inspection card | "transmission tower drone inspection" |
+| `assets/service-realestate.jpg` | Real estate card | "aerial real estate property photography" |
+| `assets/gallery-inspection-team.jpg` | Work gallery | "drone survey team on site" |
+| `assets/gallery-commercial.jpg` | Work gallery | "commercial building aerial view" |
+| `assets/gallery-construction.jpg` | Work gallery | "construction site aerial drone" |
+
+**Where to get free, commercial-use-safe images:**
+- [Unsplash](https://unsplash.com/) — search the terms above, download, rename
+- [Pexels](https://pexels.com/) — same approach, good drone/aerial category
+- Or better: swap in your own flight footage stills — nothing sells the service like real client work
+
+No file in a slot? The page won't break — it shows a clean "Photo pending" placeholder instead of a broken image icon, so you can ship now and backfill photography later.
+
+
 
 Plain HTML, CSS and JavaScript. No frameworks, no build tools, no npm install. Fonts load from Google Fonts; images are referenced from the original site's asset CDN.
 
