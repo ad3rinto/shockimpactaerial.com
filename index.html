@@ -1,287 +1,459 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ShockImpact Aerial — Drone Survey & Imaging, West Africa</title>
-<meta name="description" content="ShockImpact Aerial delivers drone mapping, photogrammetry, infrastructure inspection and real estate imaging across West Africa.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ShockImpact Aerial — Drone Survey & Imaging, West Africa</title>
+    <meta
+      name="description"
+      content="ShockImpact Aerial delivers drone mapping, photogrammetry, infrastructure inspection and real estate imaging across West Africa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
 
-<div class="grain"></div>
-
-<!-- NAV -->
-<header class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#top" class="brand">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-text">ShockImpact<span class="brand-thin">Aerial</span></span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#process">Process</a>
-      <a href="#quote">Get a quote</a>
-    </nav>
-    <a class="nav-phone" href="tel:09054646408">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1.1.5 1.1 1.1v3.5c0 .6-.5 1.1-1.1 1.1C10.6 21.2 2.8 13.4 2.8 3.2 2.8 2.6 3.3 2.1 3.9 2.1h3.5c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6"/></svg>
-      0905 464 6408
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow mono">DRONE SURVEY &amp; AERIAL IMAGING — WEST AFRICA</p>
-      <h1 class="hero-title">
-        We see your site<br>
-        the way engineers<br>
-        <span class="hero-accent">need to see it.</span>
-      </h1>
-      <p class="hero-sub">Mapping, photogrammetry and inspection flights that turn hard-to-reach terrain into decision-ready data — delivered fast, delivered accurate.</p>
-      <div class="hero-cta">
-        <a href="#quote" class="btn btn-primary">
-          <span>Start a project</span>
+    <!-- NAV -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text"
+            >ShockImpact<span class="brand-thin">Aerial</span></span
+          >
         </a>
-        <a href="#services" class="btn btn-ghost">See services ↓</a>
-      </div>
-    </div>
-
-    <!-- Telemetry HUD strip — signature element -->
-    <div class="telemetry" role="img" aria-label="Flight telemetry readout">
-      <div class="telemetry-inner mono">
-        <div class="tele-item"><span class="tele-label">ALT</span><span class="tele-val" id="teleAlt">120m</span></div>
-        <div class="tele-sep"></div>
-        <div class="tele-item"><span class="tele-label">LAT</span><span class="tele-val">6.5244° N</span></div>
-        <div class="tele-sep"></div>
-        <div class="tele-item"><span class="tele-label">LON</span><span class="tele-val">3.3792° E</span></div>
-        <div class="tele-sep"></div>
-        <div class="tele-item"><span class="tele-label">BATT</span><span class="tele-val" id="teleBatt">87%</span></div>
-        <div class="tele-sep"></div>
-        <div class="tele-item"><span class="tele-label">SIGNAL</span><span class="tele-val tele-live"><i></i> LIVE</span></div>
-        <div class="tele-sep"></div>
-        <div class="tele-item"><span class="tele-label">YEARS ACTIVE</span><span class="tele-val">10</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT / STAT CARD -->
-  <section class="about" id="about">
-    <div class="about-grid">
-      <div class="about-media elevate-2">
-        <img src="assets/about-drone-operator.jpg" alt="Drone operator flying a survey mission on site" onerror="this.closest('.about-media').classList.add('img-fallback')">
-        <div class="about-media-badge mono">10 YRS<span>EXPERIENCE</span></div>
-      </div>
-      <div class="about-copy">
-        <p class="eyebrow mono">WHO WE ARE</p>
-        <h2>Hassle-free drone photography, built for people who need answers, not just images.</h2>
-        <p>Our team plans every flight around your deliverable — whether that's a construction milestone report, a topographic model, or a listing that sells a property faster. Shock Impact Productions Limited is working toward one goal: to be West Africa's most reliable drone service partner.</p>
-        <a href="#services" class="text-link">Explore our services →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="section-head">
-      <p class="eyebrow mono">WHAT WE FLY FOR</p>
-      <h2>Four services. One flight-ready team.</h2>
-    </div>
-
-    <div class="card-grid">
-      <article class="mat-card elevate-1" tabindex="0">
-        <div class="card-media">
-          <img src="assets/service-mapping.jpg" alt="Aerial mapping and land surveying" loading="lazy" onerror="this.closest('.card-media').classList.add('img-fallback')">
-        </div>
-        <div class="card-body">
-          <h3>Mapping &amp; surveying</h3>
-          <p>Accurate aerial data for land assessments, construction planning and environmental monitoring — detailed maps delivered fast, cutting on-site time and cost.</p>
-        </div>
-      </article>
-
-      <article class="mat-card elevate-1" tabindex="0">
-        <div class="card-media">
-          <img src="assets/service-photogrammetry.jpg" alt="Photogrammetry 3D model output" loading="lazy" onerror="this.closest('.card-media').classList.add('img-fallback')">
-        </div>
-        <div class="card-body">
-          <h3>Photogrammetry</h3>
-          <p>Precise 3D models and high-resolution orthomosaic images from aerial data — built for construction, urban planning and asset management.</p>
-        </div>
-      </article>
-
-      <article class="mat-card elevate-1" tabindex="0">
-        <div class="card-media">
-          <img src="assets/service-inspection.jpg" alt="Infrastructure inspection of towers and bridges" loading="lazy" onerror="this.closest('.card-media').classList.add('img-fallback')">
-        </div>
-        <div class="card-body">
-          <h3>Infrastructure inspection</h3>
-          <p>Condition assessments for bridges, power lines and towers. Our drones reach the areas people can't, with the accuracy your reporting demands.</p>
-        </div>
-      </article>
-
-      <article class="mat-card elevate-1" tabindex="0">
-        <div class="card-media">
-          <img src="assets/service-realestate.jpg" alt="Commercial real estate aerial photography" loading="lazy" onerror="this.closest('.card-media').classList.add('img-fallback')">
-        </div>
-        <div class="card-body">
-          <h3>Real estate photography</h3>
-          <p>Aerial images and video that show a property's full story — unique angles that highlight key features and attract serious buyers.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- WORK / GALLERY -->
-  <section class="work" id="work">
-    <div class="section-head light">
-      <p class="eyebrow mono">RECENT FLIGHTS</p>
-      <h2>From the field</h2>
-    </div>
-    <div class="work-grid">
-      <figure class="work-item elevate-1">
-        <img src="assets/gallery-inspection-team.jpg" alt="Drone inspection team on site" loading="lazy" onerror="this.closest('.work-item').classList.add('img-fallback')">
-        <figcaption>Drone inspection team</figcaption>
-      </figure>
-      <figure class="work-item elevate-1">
-        <img src="assets/gallery-commercial.jpg" alt="Commercial real estate aerial shot" loading="lazy" onerror="this.closest('.work-item').classList.add('img-fallback')">
-        <figcaption>Commercial real estate</figcaption>
-      </figure>
-      <figure class="work-item elevate-1">
-        <img src="assets/gallery-construction.jpg" alt="Construction site monitored from above" loading="lazy" onerror="this.closest('.work-item').classList.add('img-fallback')">
-        <figcaption>Construction site monitoring</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="process" id="process">
-    <div class="section-head">
-      <p class="eyebrow mono">HOW WE WORK</p>
-      <h2>Six steps from interest to delivered data</h2>
-    </div>
-    <ol class="flight-log">
-      <li><span class="log-index mono">01</span><span class="log-text">Indicate interest</span></li>
-      <li><span class="log-index mono">02</span><span class="log-text">KYC / exploratory meeting</span></li>
-      <li><span class="log-index mono">03</span><span class="log-text">Recce / survey day</span></li>
-      <li><span class="log-index mono">04</span><span class="log-text">Receive invoice</span></li>
-      <li><span class="log-index mono">05</span><span class="log-text">Schedule flight date</span></li>
-      <li><span class="log-index mono">06</span><span class="log-text">Flight operation day</span></li>
-    </ol>
-    <a href="#quote" class="btn btn-primary">Start a project</a>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <div class="section-head">
-      <p class="eyebrow mono">CLIENT REPORTS</p>
-      <h2>Trusted on the ground</h2>
-    </div>
-    <div class="testi-grid">
-      <blockquote class="mat-card elevate-1 testi-card">
-        <p>"Excellent and professional service delivery. Highly recommended."</p>
-        <footer>
-          <strong>Haruna Mohammed</strong>
-          <span>Construction Director, Arewa Ltd</span>
-        </footer>
-      </blockquote>
-      <blockquote class="mat-card elevate-1 testi-card">
-        <p>"We have never been disappointed with the quality of their delivery."</p>
-        <footer>
-          <strong>Adekunle Fajana</strong>
-          <span>MD, Owena Properties</span>
-        </footer>
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- QUOTE / CONTACT -->
-  <section class="quote" id="quote">
-    <div class="quote-grid">
-      <div class="quote-copy">
-        <p class="eyebrow mono">GET A QUOTE</p>
-        <h2>Tell us what you need mapped, inspected or shot.</h2>
-        <p>We'll reply with next steps and a recce date — usually within one business day.</p>
-        <ul class="quote-contact mono">
-          <li>📞 0905 464 6408</li>
-          <li>✉ shockimpact@gmail.com</li>
-        </ul>
-      </div>
-      <form class="quote-form elevate-2" id="quoteForm">
-        <div class="field">
-          <input type="text" id="name" name="name" required placeholder=" ">
-          <label for="name">Full name</label>
-        </div>
-        <div class="field">
-          <input type="email" id="email" name="email" required placeholder=" ">
-          <label for="email">Email address</label>
-        </div>
-        <div class="field">
-          <select id="topic" name="topic" required>
-            <option value="" disabled selected></option>
-            <option>Mapping &amp; surveying</option>
-            <option>Photogrammetry</option>
-            <option>Infrastructure inspection</option>
-            <option>Real estate photography</option>
-          </select>
-          <label for="topic" class="select-label">Topic</label>
-        </div>
-        <div class="field">
-          <textarea id="message" name="message" rows="3" required placeholder=" "></textarea>
-          <label for="message">Project details</label>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">
-          <span id="btnLabel">Send message</span>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#quote">Get a quote</a>
+        </nav>
+        <a class="nav-phone" href="tel:09054646408">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1.1.5 1.1 1.1v3.5c0 .6-.5 1.1-1.1 1.1C10.6 21.2 2.8 13.4 2.8 3.2 2.8 2.6 3.3 2.1 3.9 2.1h3.5c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+          </svg>
+          0905 464 6408
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
         </button>
-      </form>
-    </div>
-  </section>
+      </div>
+    </header>
 
-</main>
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow mono">
+            DRONE SURVEY &amp; AERIAL IMAGING — WEST AFRICA
+          </p>
+          <h1 class="hero-title">
+            We see your site<br />
+            the way engineers<br />
+            <span class="hero-accent">need to see it.</span>
+          </h1>
+          <p class="hero-sub">
+            Mapping, photogrammetry and inspection flights that turn
+            hard-to-reach terrain into decision-ready data — delivered fast,
+            delivered accurate.
+          </p>
+          <div class="hero-cta">
+            <a href="#quote" class="btn btn-primary">
+              <span>Start a project</span>
+            </a>
+            <a href="#services" class="btn btn-ghost">See services ↓</a>
+          </div>
+        </div>
 
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div>
-      <span class="brand-text light">ShockImpact<span class="brand-thin">Aerial</span></span>
-      <p>Shock Impact Productions Limited — drone mapping, inspection and imaging across West Africa.</p>
-    </div>
-    <div>
-      <h4>Navigation</h4>
-      <a href="#top">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#quote">Contact</a>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <a href="#services">Drone mapping</a>
-      <a href="#services">Real estate</a>
-      <a href="#services">Commercial</a>
-      <a href="#services">Construction</a>
-    </div>
-    <div>
-      <h4>Reach us</h4>
-      <a href="tel:09054646408">0905 464 6408</a>
-      <a href="mailto:shockimpact@gmail.com">shockimpact@gmail.com</a>
-    </div>
-  </div>
-  <div class="footer-bottom mono">
-    <span>© <span id="year"></span> ShockImpact Aerial. All rights reserved.</span>
-  </div>
-</footer>
+        <!-- Telemetry HUD strip — signature element -->
+        <div class="telemetry" role="img" aria-label="Flight telemetry readout">
+          <div class="telemetry-inner mono">
+            <div class="tele-item">
+              <span class="tele-label">ALT</span
+              ><span class="tele-val" id="teleAlt">120m</span>
+            </div>
+            <div class="tele-sep"></div>
+            <div class="tele-item">
+              <span class="tele-label">LAT</span
+              ><span class="tele-val">6.5244° N</span>
+            </div>
+            <div class="tele-sep"></div>
+            <div class="tele-item">
+              <span class="tele-label">LON</span
+              ><span class="tele-val">3.3792° E</span>
+            </div>
+            <div class="tele-sep"></div>
+            <div class="tele-item">
+              <span class="tele-label">BATT</span
+              ><span class="tele-val" id="teleBatt">87%</span>
+            </div>
+            <div class="tele-sep"></div>
+            <div class="tele-item">
+              <span class="tele-label">SIGNAL</span
+              ><span class="tele-val tele-live"><i></i> LIVE</span>
+            </div>
+            <div class="tele-sep"></div>
+            <div class="tele-item">
+              <span class="tele-label">YEARS ACTIVE</span
+              ><span class="tele-val">10</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div class="toast" id="toast">Message sent — we'll be in touch shortly.</div>
-<a href="#top" class="fab" id="fab" aria-label="Back to top">↑</a>
+      <!-- ABOUT / STAT CARD -->
+      <section class="about" id="about">
+        <div class="about-grid">
+          <div class="about-media elevate-2">
+            <img
+              src="assets/about-drone-operator.jpg"
+              alt="Drone operator flying a survey mission on site"
+              onerror="
+                this.closest('.about-media').classList.add('img-fallback')
+              "
+            />
+            <div class="about-media-badge mono">
+              10 YRS<span>EXPERIENCE</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow mono">WHO WE ARE</p>
+            <h2>
+              Hassle-free drone photography, built for people who need answers,
+              not just images.
+            </h2>
+            <p>
+              Our team plans every flight around your deliverable — whether
+              that's a construction milestone report, a topographic model, or a
+              listing that sells a property faster. Shock Impact Productions
+              Limited is working toward one goal: to be West Africa's most
+              reliable drone service partner.
+            </p>
+            <a href="#services" class="text-link">Explore our services →</a>
+          </div>
+        </div>
+      </section>
 
-<script src="script.js"></script>
-</body>
+      <!-- SERVICES -->
+      <section class="services" id="services">
+        <div class="section-head">
+          <p class="eyebrow mono">WHAT WE FLY FOR</p>
+          <h2>Four services. One flight-ready team.</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="mat-card elevate-1" tabindex="0">
+            <div class="card-media">
+              <img
+                src="assets/service-mapping.jpg"
+                alt="Aerial mapping and land surveying"
+                loading="lazy"
+                onerror="
+                  this.closest('.card-media').classList.add('img-fallback')
+                "
+              />
+            </div>
+            <div class="card-body">
+              <h3>Mapping &amp; surveying</h3>
+              <p>
+                Accurate aerial data for land assessments, construction planning
+                and environmental monitoring — detailed maps delivered fast,
+                cutting on-site time and cost.
+              </p>
+            </div>
+          </article>
+
+          <article class="mat-card elevate-1" tabindex="0">
+            <div class="card-media">
+              <img
+                src="assets/service-photogrammetry.jpg"
+                alt="Photogrammetry 3D model output"
+                loading="lazy"
+                onerror="
+                  this.closest('.card-media').classList.add('img-fallback')
+                "
+              />
+            </div>
+            <div class="card-body">
+              <h3>Photogrammetry</h3>
+              <p>
+                Precise 3D models and high-resolution orthomosaic images from
+                aerial data — built for construction, urban planning and asset
+                management.
+              </p>
+            </div>
+          </article>
+
+          <article class="mat-card elevate-1" tabindex="0">
+            <div class="card-media">
+              <img
+                src="assets/service-inspection.jpg"
+                alt="Infrastructure inspection of towers and bridges"
+                loading="lazy"
+                onerror="
+                  this.closest('.card-media').classList.add('img-fallback')
+                "
+              />
+            </div>
+            <div class="card-body">
+              <h3>Infrastructure inspection</h3>
+              <p>
+                Condition assessments for bridges, power lines and towers. Our
+                drones reach the areas people can't, with the accuracy your
+                reporting demands.
+              </p>
+            </div>
+          </article>
+
+          <article class="mat-card elevate-1" tabindex="0">
+            <div class="card-media">
+              <img
+                src="assets/service-realestate.jpg"
+                alt="Commercial real estate aerial photography"
+                loading="lazy"
+                onerror="
+                  this.closest('.card-media').classList.add('img-fallback')
+                "
+              />
+            </div>
+            <div class="card-body">
+              <h3>Real estate photography</h3>
+              <p>
+                Aerial images and video that show a property's full story —
+                unique angles that highlight key features and attract serious
+                buyers.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- WORK / GALLERY -->
+      <section class="work" id="work">
+        <div class="section-head light">
+          <p class="eyebrow mono">RECENT FLIGHTS</p>
+          <h2>From the field</h2>
+        </div>
+        <div class="work-grid">
+          <figure class="work-item elevate-1">
+            <img
+              src="assets/gallery-inspection-team.jpg"
+              alt="Drone inspection team on site"
+              loading="lazy"
+              onerror="this.closest('.work-item').classList.add('img-fallback')"
+            />
+            <figcaption>Drone inspection team</figcaption>
+          </figure>
+          <figure class="work-item elevate-1">
+            <img
+              src="assets/gallery-commercial.jpg"
+              alt="Commercial real estate aerial shot"
+              loading="lazy"
+              onerror="this.closest('.work-item').classList.add('img-fallback')"
+            />
+            <figcaption>Commercial real estate</figcaption>
+          </figure>
+          <figure class="work-item elevate-1">
+            <img
+              src="assets/gallery-construction.jpg"
+              alt="Construction site monitored from above"
+              loading="lazy"
+              onerror="this.closest('.work-item').classList.add('img-fallback')"
+            />
+            <figcaption>Construction site monitoring</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="process" id="process">
+        <div class="section-head">
+          <p class="eyebrow mono">HOW WE WORK</p>
+          <h2>Six steps from interest to delivered data</h2>
+        </div>
+        <ol class="flight-log">
+          <li>
+            <span class="log-index mono">01</span
+            ><span class="log-text">Indicate interest</span>
+          </li>
+          <li>
+            <span class="log-index mono">02</span
+            ><span class="log-text">KYC / exploratory meeting</span>
+          </li>
+          <li>
+            <span class="log-index mono">03</span
+            ><span class="log-text">Recce / survey day</span>
+          </li>
+          <li>
+            <span class="log-index mono">04</span
+            ><span class="log-text">Receive invoice</span>
+          </li>
+          <li>
+            <span class="log-index mono">05</span
+            ><span class="log-text">Schedule flight date</span>
+          </li>
+          <li>
+            <span class="log-index mono">06</span
+            ><span class="log-text">Flight operation day</span>
+          </li>
+        </ol>
+        <a href="#quote" class="btn btn-primary">Start a project</a>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonials">
+        <div class="section-head">
+          <p class="eyebrow mono">CLIENT REPORTS</p>
+          <h2>Trusted on the ground</h2>
+        </div>
+        <div class="testi-grid">
+          <blockquote class="mat-card elevate-1 testi-card">
+            <p>
+              "Excellent and professional service delivery. Highly recommended."
+            </p>
+            <footer>
+              <strong>Haruna Mohammed</strong>
+              <span>Construction Director, Arewa Ltd</span>
+            </footer>
+          </blockquote>
+          <blockquote class="mat-card elevate-1 testi-card">
+            <p>
+              "We have never been disappointed with the quality of their
+              delivery."
+            </p>
+            <footer>
+              <strong>Adekunle Fajana</strong>
+              <span>MD, Owena Properties</span>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- QUOTE / CONTACT -->
+      <section class="quote" id="quote">
+        <div class="quote-grid">
+          <div class="quote-copy">
+            <p class="eyebrow mono">GET A QUOTE</p>
+            <h2>Tell us what you need mapped, inspected or shot.</h2>
+            <p>
+              We'll reply with next steps and a recce date — usually within one
+              business day.
+            </p>
+            <ul class="quote-contact mono">
+              <li>📞 0905 464 6408</li>
+              <li>✉ hello@shockimpactaerial.com</li>
+            </ul>
+          </div>
+          <form class="quote-form elevate-2" id="quoteForm">
+            <div class="field">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder=" "
+              />
+              <label for="name">Full name</label>
+            </div>
+            <div class="field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder=" "
+              />
+              <label for="email">Email address</label>
+            </div>
+            <div class="field">
+              <select id="topic" name="topic" required>
+                <option value="" disabled selected></option>
+                <option>Mapping &amp; surveying</option>
+                <option>Photogrammetry</option>
+                <option>Infrastructure inspection</option>
+                <option>Real estate photography</option>
+              </select>
+              <label for="topic" class="select-label">Topic</label>
+            </div>
+            <div class="field">
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                required
+                placeholder=" "
+              ></textarea>
+              <label for="message">Project details</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span id="btnLabel">Send message</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <span class="brand-text light"
+            >ShockImpact<span class="brand-thin">Aerial</span></span
+          >
+          <p>
+            Shock Impact Productions Limited — drone mapping, inspection and
+            imaging across West Africa.
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#quote">Contact</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="#services">Drone mapping</a>
+          <a href="#services">Real estate</a>
+          <a href="#services">Commercial</a>
+          <a href="#services">Construction</a>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <a href="tel:09054646408">0905 464 6408</a>
+          <a href="mailto:hello@shockimpactaerial.com"
+            >hello@shockimpactaerial.com</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom mono">
+        <span
+          >© <span id="year"></span> ShockImpact Aerial. All rights
+          reserved.</span
+        >
+      </div>
+    </footer>
+
+    <div class="toast" id="toast">
+      Message sent — we'll be in touch shortly.
+    </div>
+    <a href="#top" class="fab" id="fab" aria-label="Back to top">↑</a>
+
+    <script src="script.js"></script>
+  </body>
 </html>
